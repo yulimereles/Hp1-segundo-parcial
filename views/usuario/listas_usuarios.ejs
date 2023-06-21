@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+        
+    <div class="row mt-5">
+        <h1 class="text-center">Lista de Usuarios</h1>
+        <div class="col">
+            <div class="col-md-3 mb-2">
+                <a href="/usuario/nuevo" class="btn btn-sm btn-primary" id>Nuevo </a>
+                <a href="/" class="btn btn-sm btn-info text-light">Inicio</a>
+            </div>
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Email</th>
+                        <th>Activo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="listaUsuarios">
+                    <!-- Aquí se mostrarán los usuarios utilizando vanilla JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="/js/lista_usuarios.js"></script>
+
+<%- include('../partials/footer') %>

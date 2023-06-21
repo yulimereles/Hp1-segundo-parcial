@@ -1,0 +1,24 @@
+<%- include('../partials/header')  %>
+
+<div class="row">
+    <div class="container col-md-5 col-sm-12 col-lg-3 col-xl-3 mx-auto mt-5 border p-3">
+        <h2 class="text-center px-2 bg-primary text-light rounded">Iniciar Sesión</h2>
+        <form action="#" id="formLogin">
+            <div class="form-group mb-3">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+                <button type="submit" class="btn btn-primary btn-block">Iniciar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/login.js"></script>
+
+<%- include('../partials/footer')  %>
